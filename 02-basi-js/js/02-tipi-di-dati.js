@@ -17,5 +17,20 @@ let nomeCorso = "Python 2025";
 let materia = 'JavaScript';
 let presenza = true; // Boolean
 
-// Quando in dubbo sul tipo di dato, possiamo utilizzare l'operatore typeof seguito dalla variabile di cui ci interessa conoscere il tipo
+// Quando in dubbio sul tipo di dato, possiamo utilizzare l'operatore typeof seguito dalla variabile di cui ci interessa conoscere il tipo
+console.log(typeof nomeDocente);
+console.log(typeof etaDocente);
+console.log(typeof presenza);
+
+console.log("Ciao, mi chiamo " + nomeDocente + " " + cognomeDocente + " ho " + etaDocente + " anni. Insegno " + materia + " nel corso " + nomeCorso + ".");
+
+nomeDocente = "Daniele";
+cognomeDocente = "Cerrina";
+etaDocente = 21;
+materia = "Python";
+
 console.log(nomeDocente);
+
+let presentazione = "Ciao, mi chiamo " + nomeDocente + " " + cognomeDocente + " ho " + etaDocente + " anni. Insegno " + materia + " nel corso " + nomeCorso + ".";
+
+console.log(presentazione);
