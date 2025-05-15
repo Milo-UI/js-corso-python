@@ -116,3 +116,22 @@ let arr3 = ['M', 'I', 'L', 'O'];
 
 let string2 = arr3.join('');
 console.log(string2);
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ESERCIZI                                  */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Esercizio 1 ------------------------------ */
+// Salvare un nome in una variabile e stamparlo in console senza l'iniziale
+
+/* ------------------------------- Esercizio 2 ------------------------------ */
+// Data una stringa, stamparla in console al contrario
+// Punti in più se risolta in due righe max compreso il console.log()
+
+/* ------------------------------- Esercizio 3 ------------------------------ */
+// Elabora uno script per estrarre l'estensione di un file
+// "immagine86.jpg" -> "L'estensione del file è: jpg"
+
+/* ------------------------------- Esercizio 4 ------------------------------ */
+// Elabora uno script per rendere in uppercase la prima lettera di ogni parola di una stringa (es.: "oggi sono a lezione" -> "Oggi Sono A Lezione")
