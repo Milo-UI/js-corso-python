@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Intro 01 - Includere JavaScript in una pagina web</title>
+
+        <!-- 
+            è possibile includere JavaScript nel tag HEAD del documento HTML, ma questo potrebbe rallentare o bloccare il caricamento della pagina.
+        -->
+        <!-- <script>
+            alert('Ciao a tutti');
+        </script> -->
+    </head>
+    <body>
+
+        <!-- H1 sta per Heading 1 ed è il titolo principale della pagina. Ce n'è solo uno per pagina -->
+        <h1>Intro 01 - Includere JavaScript in una pagina web</h1>
+
+        <!-- Gli Headings vanno da h1 a h6   -->
+        <h2>Titolo di secondo livello</h2>
+        
+        <h3>Titolo di terzo livello</h3>
+
+        <h4>Titolo di quarto livello</h4>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla non qui ipsa cupiditate laborum voluptatibus, id accusantium explicabo quae blanditiis temporibus, accusamus repellendus! Ratione quisquam debitis nulla earum voluptas.
+        </p>
+
+        <a href="https://www.google.com">Vai al sito di Google</a>
+
+        <!-- Lista non ordinata Unordered List -->
+        <ul>
+            <!-- LI List Item - elemento della lista -->
+            <li>Pane</li>
+            <li>Pasta</li>
+            <li>Acqua</li>
+        </ul>
+
+        <!-- Lista ordinata Ordered List -->
+        <ol>
+            <li>Svegliarsi</li>
+            <li>Lavarsi</li>
+            <li>piangere</li>
+        </ol>
+        
+        <!-- 
+            è più corretto inserire il JS al fondo della pagina PRIMA della chiusura del BODY
+        -->
+        <!-- <script>
+            alert('Sono al fondo del documento');
+        </script> -->
+
+        <!--
+            Scrivere il nostro JS direttamente nell'HTML non è sbagliato, però diventa "ingombrante" e fastidioso quando il codice è lungo e complesso. Sarebbe meglio quindi mettere tutto il codice JS in un file a parte e richiamarlo all'interno del documento HTML 
+        -->
+        <script src="js/01-includere-js.js"></script>
+    </body>
+</html>
