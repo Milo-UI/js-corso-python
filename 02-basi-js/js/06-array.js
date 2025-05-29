@@ -97,6 +97,31 @@ console.log(docentiAggiornato);
 
     MINIMO 8 prodotti
 */
-let lista = document.getElementById('lista');
 
-lista.innerHTML = `<li>Prodotto 0.00</li>`;
+let lista = document.getElementById('lista');
+let elTotale = document.getElementById('totale');
+let elIva = document.getElementById('iva');
+let elGranTotale = document.getElementById('granTotale');
+
+let prodotti = ['Pane', 'Pasta', 'Biscotti', 'Insalata', 'Birra'];
+let prezzi = [1.20, 0.99, 4, 0.50, 6.00];
+
+let totale = 0;
+
+console.log(`Il secondo prodotto è ${prodotti[1]} e costa ${prezzi[1]}`);
+
+for (let i = 0; i < prodotti.length; i++) {
+    console.log(prodotti[i], prezzi[i]);
+    
+    lista.innerHTML += `<li>${prodotti[i]} €${prezzi[i].toFixed(2)}</li>`;
+
+    totale += prezzi[i];
+}
+
+elTotale.innerHTML = `Totale: €${totale.toFixed(2)}`;
+
+let iva = totale * 0.22;
+let subtotale = totale + iva;
+
+elIva.innerHTML = `Costo Iva(22%): €${iva.toFixed(2)}`;
+elGranTotale.innerHTML = `GRAN TOTALE: €${subtotale.toFixed(2)}`;

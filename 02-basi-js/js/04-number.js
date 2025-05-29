@@ -75,6 +75,30 @@ if (numero % 2 === 0) { // se un numero diviso per 2 non ha resto, allora è par
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- Esercizio 1 ----------------------------- */
 // Chiediamo all'utente in che anno è nato e diciamogli quanti anni ha
+// let annoNascita = prompt('In che anno sei nato?');
+// let annoCorrente = 2025;
+// let eta = annoCorrente - annoNascita;
+// let messaggio = `Quest'anno avrai ${eta} anni`;
+
+// // document.write(`<h2>${messaggio}</h2>`);
+
+// let titoloPagina = document.getElementById('messaggio');
+// console.log(titoloPagina);
+
+// titoloPagina.innerHTML = messaggio;
 
 /* ------------------------------- Esercizio 2 ------------------------------ */
 // Scrivere un programma che calcola il perimetro e l’area di un triangolo avente i lati della seguente lunghezza: 5,6,7.
+
+let lato1 = 5;
+let lato2 = 6;
+let lato3 = 7;
+
+let perimetro = lato1 + lato2 + lato3;
+console.log(`Il perimetro del triangolo è: ${perimetro}`);
+
+let semiPerimetro = perimetro / 2;
+
+let area = Math.sqrt(semiPerimetro) * ((semiPerimetro - lato1) * (semiPerimetro - lato2) * (semiPerimetro - lato3));
+
+console.log(`L'area del triangolo è ${area}`);
